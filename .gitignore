@@ -1,5 +1,6 @@
 .vscode/
 
-css/
+src/css/*
+!src/css/reboot.min.css
 
 .DS_Store
