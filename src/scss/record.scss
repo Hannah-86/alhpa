@@ -1,0 +1,90 @@
+@import './modules/variables';
+@import './modules/default-style';
+@import './modules/header';
+@import './modules/form';
+
+.main-container {
+  padding-top: 70px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.record {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 40px;
+
+  &__start {
+    // width: 28%;
+
+    & > img {
+      display: block;
+      width: 83px;
+      margin-bottom: 5px;
+    }
+    & > button {
+      display: block;
+      // margin: 0 auto;
+      padding: 0;
+      width: 60px;
+      border: 0;
+      border-radius: 2px;
+      font-size: 18px;
+      color: white;
+      background-color: $mainPurple;
+    }
+  }
+
+  &__stop {
+    // width: 20%;
+
+        & > img {
+      display: block;
+      width: 60px;
+      margin-bottom: 5px;
+    }
+    & > button {
+      display: block;
+      padding: 0;
+      width: 60px;
+      border: 1px solid $border;
+      border-radius: 2px;
+      font-size: 18px;
+      color: $pointPurple;
+      background-color: white;
+    }
+  }
+}
+
+.form {
+  &__btn-wrapper {
+    margin-top: 0;
+  }
+  &__btn {
+    margin-bottom: 20px;
+    width: 70px;
+    background-color: $pointPurple;
+  }
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+  & > img {
+    width: 100%;
+  }
+}
