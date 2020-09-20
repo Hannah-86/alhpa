@@ -4,59 +4,45 @@
 @import './modules/form';
 
 .main-container {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .page-title {
+  margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
 }
 
 .record {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
-  &__start {
-    // width: 28%;
+  &__btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 
-    & > img {
-      display: block;
-      width: 83px;
-      margin-bottom: 5px;
-    }
     & > button {
-      display: block;
-      // margin: 0 auto;
       padding: 0;
-      width: 60px;
-      border: 0;
+      width: 110px;
+      height: 35px;
       border-radius: 2px;
       font-size: 18px;
-      color: white;
-      background-color: $mainPurple;
     }
   }
 
+  &__start {
+    color: white;
+    background-color: $mainPurple;
+    border: 0;
+  }
   &__stop {
-    // width: 20%;
+    color: $pointPurple;
+    background-color: white;
+    border: 1px solid $border;
+  }
 
-        & > img {
-      display: block;
-      width: 60px;
-      margin-bottom: 5px;
-    }
-    & > button {
-      display: block;
-      padding: 0;
-      width: 60px;
-      border: 1px solid $border;
-      border-radius: 2px;
-      font-size: 18px;
-      color: $pointPurple;
-      background-color: white;
-    }
+  & > audio {
+    width: 100%;
   }
 }
 

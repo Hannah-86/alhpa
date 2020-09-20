@@ -17,14 +17,11 @@
       <div class="main-container">
         <h2 class="page-title">つぶやき</h2>
         <div class="record">
-          <div class="record__start">
-            <img src="./icon/talking.png" alt="record image">
-            <button>録音</button>
+          <div class="record__btn">
+            <button class="record__start">録音</button>
+            <button class="record__stop">停止</button>
           </div>
-          <div class="record__stop">
-            <img src="./icon/not_talking.png" alt="record image">
-            <button>停止</button>
-          </div>
+          <audio src="./audio/demo.mp3" controlslist="nodownload" controls></audio>
         </div>
         <h2 class="page-title">ハッシュタグ</h2>
           <label for="age" class="form__title">年代</label>
